@@ -7,7 +7,8 @@ import LogoutButton from './LogoutButton';
 
 const Navbar = () => {
   
- const { user, logout } = useAuth();
+ const { user } = useAuth(); 
+ 
   return (
     <nav className={styles.nav}>
       <div className= {styles.navLeft}>
@@ -18,7 +19,7 @@ const Navbar = () => {
       <div className={styles.navRight}>
         {user ? (
           <>
-            <span>{user.username}</span>
+            <span>{user.first_name}</span>
             <LogoutButton />
           </>
         ) : (

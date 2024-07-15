@@ -25,6 +25,7 @@ const LogoutButton = () => {
       if (response.ok) {
         // Successful logout from API
         logout(); // Clear local session
+        localStorage.removeItem('user'); // Clear local storage
         router.push('../'); // Redirect to landing page or desired route
       } else {
         console.error('Logout failed:', response.statusText);

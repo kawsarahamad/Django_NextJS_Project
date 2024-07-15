@@ -1,0 +1,51 @@
+/* app/components/dashboard.module.css */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow:0 0 8px rgba(0.6, 0.6, 0.6, .3);
+    background-color:white; /* Off-white background color */
+    border-radius: 6px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.semester-container {
+    margin-bottom: 30px;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.results-table th, .results-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #0a0a0a;
+}
+
+.logout-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-link a:hover {
+    color: #555;
+}
+
+.dashboard-container h2, .dashboard-container h1{
+    font:bold 1.25rem Arial, sans-serif;
+    text-align: center;
+}

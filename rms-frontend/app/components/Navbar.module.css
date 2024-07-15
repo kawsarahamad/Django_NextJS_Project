@@ -1,0 +1,39 @@
+/* app/components/Navbar.module.css */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #013e5f;
+    color: white;
+  }
+  
+  .navLeft a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+  }
+
+  
+  .navRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navRight a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+  
+  .navRight span {
+    margin-right: 1rem;
+  }
+  
+  .logoutButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  

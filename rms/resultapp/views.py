@@ -144,6 +144,19 @@ def DashboardDataView(request):
 
 
 
+def profileView(request):
+        student = request.user
+        data = {
+            'student': {
+                'first_name': student.first_name,
+                'last_name': student.last_name,
+                'student_id': student.student_id,
+                'email': student.email,
+                'department': student.department.name,
+            },
+        }
+
+        return JsonResponse(data)
 
 
 

@@ -1,5 +1,5 @@
 from django.urls import include, path
-from .views import CustomLoginView, CustomLogoutView, DashboardDataView, DashboardView, ResultListCreate, StudentListCreate, DepartmentListCreate, CourseListCreate, SemesterListCreate,landing_page
+from .views import CustomLoginView, CustomLogoutView, DashboardDataView, DashboardView, ResultListCreate, StudentListCreate, DepartmentListCreate, CourseListCreate, SemesterListCreate,landing_page, profileView
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
@@ -28,6 +28,7 @@ urlpatterns = [
     path('accounts/logout/', CustomLogoutView.as_view(), name='logout'),
     path('dashboard/', DashboardView.as_view(), name='dashboard'),
     path('dashboard-data/',DashboardDataView, name='dashboard-data'),
+    path('profile/',profileView, name='profile-view'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 

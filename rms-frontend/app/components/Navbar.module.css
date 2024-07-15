@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: .5rem;
     background-color: #013e5f;
     color: white;
   }
@@ -11,7 +11,7 @@
   .navLeft a {
     color: white;
     text-decoration: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   
@@ -37,3 +37,26 @@
     cursor: pointer;
   }
   
+  .profile{
+    background-color: #013e5f; /* Example styling */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: .3rem;
+    &:hover {
+      background-color: rgb(2, 83, 123); /* New hover color */
+    }
+  }
+
+  .homeButton{
+    background-color: #013e5f; /* Example styling */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: .3rem;
+    &:hover {
+      background-color: rgb(2, 83, 123); /* New hover color */
+    }
+  }

@@ -1,11 +1,14 @@
 /* app/components/LogoutButton.module.css */
 .logoutButton {
-    background-color: rgb(255, 42, 0); /* Example styling */
+    background-color: #013e5f; /* Example styling */
     color: white;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
     font-size: 16px;
-    /* Add more styles as needed */
+    border-radius: .3rem;
+    &:hover {
+      background-color: rgb(2, 83, 123); /* New hover color */
+    }
   }
   

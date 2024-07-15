@@ -1,0 +1,20 @@
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.detail {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    font:bold 24px/1.6 'Open Sans', sans-serif;
+}
+

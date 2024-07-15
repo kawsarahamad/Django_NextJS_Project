@@ -12,14 +12,24 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div className= {styles.navLeft}>
-        <Link href="/">
-        Result Management System
-        </Link>
+        {user ? (
+          <Link className={styles.homeButton} href="/dashboard">
+          Result Management System
+          </Link>
+        ) : (
+          <Link className={styles.homeButton} href="/">
+          Result Management System
+          </Link>
+        )
+        }
+        
       </div>
       <div className={styles.navRight}>
         {user ? (
           <>
-            <span>{user.first_name}</span>
+            <Link className={styles.profile}href="../profile">
+              Profile
+            </Link>
             <LogoutButton />
           </>
         ) : (

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ student.first_name }} {{ student.last_name }}</h1>
+    
+    <h2>Overall CGPA: {{ cgpa|floatformat:2 }}</h2>
+    
+    <h2>Results by Semester:</h2>
+
+    {% for semester, gpa in semester_gpas.items %}
+        <h3>Semester: {{ semester.semester_number }} - GPA: {{ gpa|floatformat:2 }}</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Code</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                    {% if result.semester == semester %}
+                        <tr>
+                            <td>{{ result.course.name }}</td>
+                            <td>{{ result.course.code }}</td>
+                            <td>{{ result.grade }}</td>
+                        </tr>
+                    {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+
+    <p><a href="{% url 'logout' %}">logout</a></p>
+</body>
+</html>

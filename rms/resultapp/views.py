@@ -125,6 +125,7 @@ def DashboardDataView(request):
         'student': {
             'first_name': student.first_name,
             'last_name': student.last_name,
+            'student_id': student.student_id,
         },
         'results': [
             {
